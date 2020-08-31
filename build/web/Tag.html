@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+  <title> HashTagNikalo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+  .main{
+    padding: 40px;;
+  }
+
+  ul {
+    list-style-type: square;
+}
+
+h1,h2,h3,h4,p,a{
+      font-family: Comic Sans MS, Comic Sans, cursive;
+  }
+
+
+  
+body {
+    margin: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    height: 100%;
+   
+   
+    border-style: solid;
+      border-width: 15px;
+     
+      border-color: darkgoldenrod;
+  }
+  .main{
+    background-color: darkcyan;
+  }
+
+  .heading h1{
+      color: tomato;
+  }
+
+  h1,h2,h3,h4,p,a{
+      font-family: Comic Sans MS, Comic Sans, cursive;
+  }
+
+  .container2-fluid{
+    background-color: goldenrod;
+    
+}
+.container2-fluid a{
+    background-color:black;
+    
+}
+
+    
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+   
+  }
+
+  #navbar{
+
+    background-color: darkgoldenrod;
+    
+
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 450px}
+  
+  
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  
+  
+  footer {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 15px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
+
+
+    
+  </style>
+</head>
+<body>
+  <div class="main">
+
+    
+    <!-- <div class="heading">
+      <h1>HashTag Generater </h1>
+    </div> -->
+
+
+  
+<div class="container-fluid text-center">    
+    <div class="row content">
+
+      <div class="row">
+        <div class="jumbotron text-center col-md-12">
+            <h1><span style="color:hotpink">HashTag</span> Generator</h1>
+  <p>this website will help you extract hashtag from twitter tweets!</p> 
+</div>
+    </div>
+      
+
+        <div class="row">
+          <div class="col-md-12">
+           <form method="post" action="tweetServlet">
+      <div class="form-group">
+        <label for="tweettxt">Tweet :</label>
+        <input type="text" class="form-control" name="tweettxt" id="tweettxt">
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Get HashTags</button>
+    </form>
+    
+          </div>
+      </div>
+    
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <p>#HashTag..!!</p>
+</footer>
+
+  </div>
+
+</body>
+</html>
